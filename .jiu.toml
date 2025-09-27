@@ -1,0 +1,19 @@
+description = "\u001b[1;36mrust-wasm-test-2025\u001b[22;39m: Test"
+
+[[recipes]]
+names = ["build", "b"]
+description = "\u001b[4mB\u001b[24muild release binary"
+arguments = []
+command = ["wasm-pack", "build", "--target", "web"]
+
+[[recipes]]
+names = ["test", "t"]
+description = "Run \u001b[4mt\u001b[24mests"
+arguments = ["*rest"]
+command = ["cargo", "test", ["*rest"]]
+
+[[recipes]]
+names = ["version", "v"]
+description = "Set or get \u001b[4mv\u001b[24mersion"
+arguments = ["?version"]
+command = ["./scripts/version.sh", ["?version"]]
