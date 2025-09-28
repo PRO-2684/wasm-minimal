@@ -38,6 +38,22 @@ Note that by continuing, we assume that you:
 - Are only targeting modern browsers;
 - Do not wish to mess with bundlers.
 
+## 🚀 Quick Start
+
+1. [Install `wasm-pack`](https://drager.github.io/wasm-pack/installer/).
+2. Clone this repository:
+    ```bash
+    git clone https://github.com/PRO-2684/wasm-minimal.git
+    ```
+3. Build Wasm module and glue code:
+    ```bash
+    wasm-pack build --target web --no-pack
+    ```
+4. Spin up your server for testing:
+    ```bash
+    python3 -m http.server
+    ```
+
 ## 📖 Tutorial
 
 ### 🛠️ Install Necessary Tools
