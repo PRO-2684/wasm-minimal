@@ -9,7 +9,7 @@ use wasm_bindgen::{prelude::wasm_bindgen, JsValue};
 
 /// Add two numbers together.
 #[wasm_bindgen]
-pub fn add(left: u64, right: u64) -> u64 {
+pub fn add(left: u32, right: u32) -> u32 {
     left + right
 }
 
