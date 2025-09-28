@@ -1,12 +1,9 @@
 # Wasm Minimal
 
 [![GitHub License](https://img.shields.io/github/license/PRO-2684/wasm-minimal?logo=opensourceinitiative)](https://github.com/PRO-2684/wasm-minimal/blob/main/LICENSE)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/PRO-2684/wasm-minimal/release.yml?logo=githubactions)](https://github.com/PRO-2684/wasm-minimal/blob/main/.github/workflows/release.yml)
-[![GitHub Release](https://img.shields.io/github/v/release/PRO-2684/wasm-minimal?logo=githubactions)](https://github.com/PRO-2684/wasm-minimal/releases)
-[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/PRO-2684/wasm-minimal/total?logo=github)](https://github.com/PRO-2684/wasm-minimal/releases)
-[![Crates.io Version](https://img.shields.io/crates/v/wasm-minimal?logo=rust)](https://crates.io/crates/wasm-minimal)
-[![Crates.io Total Downloads](https://img.shields.io/crates/d/wasm-minimal?logo=rust)](https://crates.io/crates/wasm-minimal)
-[![docs.rs](https://img.shields.io/docsrs/wasm-minimal?logo=rust)](https://docs.rs/wasm-minimal)
+![GitHub Repo stars](https://img.shields.io/github/stars/PRO-2684/wasm-minimal?style=flat)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/PRO-2684/wasm-minimal)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/PRO-2684/wasm-minimal)
 
 Minimal template and step-by-step tutorial for developing Wasm with Rust.
 
@@ -38,7 +35,7 @@ Note that by continuing, we assume that you:
 - Are only targeting modern browsers;
 - Do not wish to mess with bundlers.
 
-## 🚀 Quick Start
+## 🚀 Template
 
 1. Install [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate) & [`wasm-pack`](https://drager.github.io/wasm-pack/installer/).
 2. Use this repository as the template and follow the setup wizard:
@@ -47,7 +44,8 @@ Note that by continuing, we assume that you:
     ```
 3. Build Wasm module and glue code:
     ```bash
-    wasm-pack build --target web --no-pack
+    wasm-pack build --target web --no-pack # Original command
+    jiu b # If you've got https://github.com/PRO-2684/jiu
     ```
 4. Spin up your server for testing:
     ```bash
@@ -55,7 +53,7 @@ Note that by continuing, we assume that you:
     ```
 
 > [!NOTE]
-> Your [username](https://cargo-generate.github.io/cargo-generate/templates/builtin_placeholders.html?highlight=username) will be automatically determined by `cargo-generate`, usually via `user.name` in your Git config.
+> Your [username](https://cargo-generate.github.io/cargo-generate/templates/builtin_placeholders.html?highlight=username) will be automatically determined by `cargo-generate`, usually via `user.name` in your Git config. So make sure it matches your GitHub username.
 
 ## 📖 Tutorial
 
@@ -192,10 +190,11 @@ Feel free to explore more [examples](https://wasm-bindgen.github.io/wasm-bindgen
 
 <!-- Source phase imports: [Usage](https://wasm-bindgen.github.io/wasm-bindgen/reference/deployment.html#module) / [Chrome Status](https://chromestatus.com/feature/5796131906519040) -->
 
+<!-- ## ⭐ Star History
+[![Stargazers over time](https://starchart.cc/PRO-2684/wasm-minimal.svg?variant=adaptive)](https://starchart.cc/PRO-2684/wasm-minimal) -->
+
 ## 🎉 Credits
 
 - [Hello wasm-pack!](https://drager.github.io/wasm-pack/book/)
 - [Without a Bundler - The `wasm-bindgen` Guide](https://wasm-bindgen.github.io/wasm-bindgen/examples/without-a-bundler.html)
 - [Rust and WebAssembly](https://rustwasm.github.io/docs/book/) (Archived)
-
-<!-- - [Command Line Interface - The `wasm-bindgen` Guide](https://wasm-bindgen.github.io/wasm-bindgen/reference/cli.html) -->
