@@ -1,4 +1,4 @@
-use wasm_minimal::add;
+use {{crate_name}}::add;
 
 #[test]
 fn test_add() {

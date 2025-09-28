@@ -1,15 +1,15 @@
 [package]
-name = "wasm-minimal"
+name = "{{project-name}}"
 version = "0.1.0"
 edition = "2024"
 readme = "README.md"
-description = "Minimal template and step-by-step tutorial for developing Wasm with Rust"
+description = "{{project-description}}"
 keywords = []
 categories = []
 include = ["src", "README.md", "LICENSE"]
-repository = "https://github.com/PRO-2684/wasm-minimal"
+repository = "https://github.com/{{username}}/{{project-name}}"
 license = "MIT"
-authors = ["PRO-2684"]
+authors = ["{{username}}"]
 
 [dependencies]
 wasm-bindgen = "0.2.104"

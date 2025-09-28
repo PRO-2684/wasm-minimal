@@ -5,7 +5,7 @@
 // will "boot" the module and make it ready to use. Currently browsers
 // don't support natively imported WebAssembly as an ES module, but
 // eventually the manual initialization won't be required!
-import init, { add } from './pkg/wasm_minimal.js';
+import init, { add } from './pkg/{{crate_name}}.js';
 
 async function run() {
     // First up we need to actually load the Wasm file, so we use the

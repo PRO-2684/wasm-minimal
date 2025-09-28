@@ -1,0 +1,5 @@
+[template]
+
+[placeholders.project-description]
+type = "string"
+prompt = "Short description of the project"

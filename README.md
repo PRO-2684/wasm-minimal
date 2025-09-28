@@ -40,10 +40,10 @@ Note that by continuing, we assume that you:
 
 ## 🚀 Quick Start
 
-1. [Install `wasm-pack`](https://drager.github.io/wasm-pack/installer/).
-2. Clone this repository:
+1. Install [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate) & [`wasm-pack`](https://drager.github.io/wasm-pack/installer/).
+2. Use this repository as the template and follow the setup wizard:
     ```bash
-    git clone https://github.com/PRO-2684/wasm-minimal.git
+    cargo generate PRO-2684/wasm-minimal
     ```
 3. Build Wasm module and glue code:
     ```bash
@@ -53,6 +53,9 @@ Note that by continuing, we assume that you:
     ```bash
     python3 -m http.server
     ```
+
+> [!NOTE]
+> Your [username](https://cargo-generate.github.io/cargo-generate/templates/builtin_placeholders.html?highlight=username) will be automatically determined by `cargo-generate`, usually via `user.name` in your Git config.
 
 ## 📖 Tutorial
 
