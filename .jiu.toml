@@ -4,7 +4,8 @@ description = "\u001b[1;36mrust-wasm-test-2025\u001b[22;39m: Test"
 names = ["build", "b"]
 description = "\u001b[4mB\u001b[24muild release binary"
 arguments = []
-command = ["wasm-pack", "build", "--target", "web"]
+command = ["wasm-pack", "build", "--target", "web", "--no-pack"]
+# command = ["cargo", "build", "--lib", "--target", "wasm32-unknown-unknown", "--release"]
 
 [[recipes]]
 names = ["test", "t"]
