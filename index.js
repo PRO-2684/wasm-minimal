@@ -5,7 +5,7 @@
 // will "boot" the module and make it ready to use. Currently browsers
 // don't support natively imported WebAssembly as an ES module, but
 // eventually the manual initialization won't be required!
-import init, { add } from './pkg/rust_wasm_test_2025.js';
+import init, { add } from './pkg/wasm_minimal.js';
 
 async function run() {
     // First up we need to actually load the Wasm file, so we use the

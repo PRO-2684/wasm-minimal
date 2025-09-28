@@ -1,4 +1,4 @@
-use rust_wasm_test_2025::add;
+use wasm_minimal::add;
 
 #[test]
 fn test_add() {

@@ -9,7 +9,6 @@ on:
 env:
   BIN_NAME: rust-wasm-test-2025
 
-
 jobs:
   create-release:
     name: create-release
@@ -112,4 +111,3 @@ jobs:
         toolchain: stable
     - name: Publish to crates.io
       run: cargo publish --token ${{ secrets.CARGO_TOKEN }}
-
