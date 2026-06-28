@@ -12,10 +12,10 @@ license = "MIT"
 authors = ["{{username}}"]
 
 [dependencies]
-wasm-bindgen = "0.2.104"
+wasm-bindgen = "0.2.126"
 
 [dependencies.web-sys]
-version = "0.3.81"
+version = "0.3.103"
 features = ["Document", "Element", "HtmlElement", "Node", "Window"]
 
 [lib]
